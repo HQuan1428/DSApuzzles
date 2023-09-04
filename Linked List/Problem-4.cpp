@@ -1,4 +1,4 @@
-/* Problem-17/ DSA puzzles
+/* Problem-17/ DSA puzzles: Find Intersect Node.
 Solution: 
 -Brute-force:
     one easy sotution is to compare every node pointer 
