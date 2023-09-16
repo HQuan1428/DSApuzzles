@@ -1,3 +1,12 @@
+/*Problem 35: split a Circulat linked list into two equal parts
+*Solution: 
+    + Store the middle and the last of cirular linked list using floyd cycle finding algorithm. 
+    + Make the seconde half circular. 
+    + Make the first half circular. 
+    + Set head pointers of the two linked lists.
+Problem 36: concatenate two linked lists.  
+*/
+
 #include <bits/stdc++.h>
 
 using namespace std; 
@@ -78,10 +87,10 @@ public:
 int main() {
     CircularLinkedList<int> cll;
     cll.insert(1);
-    // cll.insert(2);
-    // cll.insert(3);
-    // cll.insert(4);
-    // cll.insert(5);
+    cll.insert(2);
+    cll.insert(3);
+    cll.insert(4);
+    cll.insert(5);
     cll.print(cll.getHead()); // Output: 3 2 1
     auto temp = cll.SplitCLL();
     cll.print(temp->fiHead); 
