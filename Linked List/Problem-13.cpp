@@ -96,6 +96,41 @@ public:
         temp2->next = head;
         return newHead;  
     }
+    Node* Problem_52(Node *head) {
+        //creating the odd and even list 
+        Node *oddList = NULL, *evenList = NULL;
+        //creating tail variables for both the list. 
+        Node *oddListEnd = NULL, *evenListEnd = NULL;
+        Node *temp = head;
+        if(!head) {
+            return NULL;
+        }
+        while(temp) {
+            if(temp->data%2 == 0) {
+                if(evenList == NULL) {
+                    evenList = temp; 
+                    evenListEnd = temp;
+                }
+                else {
+                    evenListEnd->next = temp; 
+                    evenListEnd = temp;
+                }
+            }
+            else {
+                if(oddList == NULL) {
+                    oddList = temp;
+                    oddListEnd = temp;
+                }
+                else {
+                    oddListEnd->next = temp; 
+                    oddListEnd = temp; 
+                }
+            }
+            temp = temp->next;
+        }
+        evenListEnd->next = oddList; 
+        return evenList;
+    }
 };
 
 int main(int argc, char const *argv[]){
@@ -104,7 +139,7 @@ int main(int argc, char const *argv[]){
         sll.insert(i); 
     }
     sll.print(sll.getHead());
-    sll.print(sll.Problem_44(sll.getHead()));
+    sll.print(sll.Problem_52(sll.getHead()));
     system("pause");
     return 0;
 }
