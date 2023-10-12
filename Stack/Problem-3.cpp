@@ -1,8 +1,8 @@
 /*
 Problem-8-9-10: palindome or not 
-Problem-11: reverse stack. 
-
-    
+Problem-11: reverse stack.
+Problem 12-13: refer queue chapter.
+Problem 14-15-16-17: Implementation m stack in the one array, that array indexes are from 1 to n. 
 */
 #include <iostream>
 #include <string>
@@ -20,6 +20,7 @@ Problem-11: reverse stack.
 
 void InsertAtBottom(std::stack<int>*, int); 
 
+//Using recursion to iterator though each element in the stack and each component to the bottom of the stack. 
 void ReverseStack(std::stack<int> *st) {
     int data; 
     if((*st).empty()) return; 
@@ -28,6 +29,7 @@ void ReverseStack(std::stack<int> *st) {
     ReverseStack(st); 
     InsertAtBottom(st, data); 
 }
+//Insert the element at the bottom of the stack 
 void InsertAtBottom(std::stack<int> *st, int data) {
     int temp; 
     if((*st).empty()) {
