@@ -2,7 +2,8 @@
 Problem-28: Remove all adjacent duplicates Using stack
 Problem-29: Replace every element with nearest greater element on right of that element
     Time complexity: O(n^2), Space complexity: O(1).
-
+Problem-30: Improve problem-29 with stack 
+    Time complexity: O(n), Space complexity: O(n).
 */
 #include <iostream>
 #include <string>
