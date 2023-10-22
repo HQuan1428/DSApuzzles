@@ -40,12 +40,12 @@ ll MaxSumSW(int *a, int n, int k) {
 //
 
 int main(int argc, char const *argv[]){
-    Queue<int> qe(5);
-    qe.EnQueue(1);
-    qe.EnQueue(2);
-    qe.EnQueue(3);
-    qe.EnQueue(4);
-    std::cout << qe.getfront() << " " << qe.getrear() << std::endl;
+    // Queue<int> qe(5);
+    // qe.EnQueue(1);
+    // qe.EnQueue(2);
+    // qe.EnQueue(3);
+    // qe.EnQueue(4);
+    // std::cout << qe.getfront() << " " << qe.getrear() << std::endl;
     system("pause");
     return 0;
 }
