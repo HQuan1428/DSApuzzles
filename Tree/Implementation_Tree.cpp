@@ -115,6 +115,13 @@ public:
     }
 };
 
+//Generic Trees
+struct TreeNode {
+    int data;
+    TreeNode *firstChild;
+    TreeNode *nextSibling; 
+};
+
 
 int main(int argc, char const *argv[]) {
     std::cout << "hello world" << std::endl;
