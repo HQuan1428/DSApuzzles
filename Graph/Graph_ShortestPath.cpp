@@ -61,7 +61,26 @@ void Dijkstra(Graph *G, int s) {
     }
 }
 
-
+//Weighted negative Graph[Bellman-Ford]
+void BellmanFordAlgorithm(Graph *G, int s) {
+    std::queue<int> Q;
+    int v, w;
+    Q.push(s);
+    Distance[s] = 0; 
+    while(!Q.empty()) {
+        v = Q.front();
+        Q.pop();
+        /* for all adjacent vertices w of v {
+            Compute new distance d = distance[v] + weight[v][w];
+            if(old distance to w > new distance d) {
+                Distance[v] = (distance to v) + weifght[v][w];
+                Path[w] = v;
+                if(w is there is queue)
+                    Q.push(w);
+            }
+        }*/
+    }
+}
 
 
 
