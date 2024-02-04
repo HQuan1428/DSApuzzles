@@ -6,7 +6,7 @@
 #include "Graph_Implementation.h"
 #define ll long long
 
-int indegree[1000];
+int indegree[1000]; // Number of edges into it.
 int TopologicalOrder[1000];
 
 void TopologicalSort(Graph *G) {
